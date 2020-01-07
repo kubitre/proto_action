@@ -24,9 +24,10 @@ function preparing_before_generating {
     cd ../proto_files
 }
 
+function placingYourContractsToNeedPlace {
+    echo "gen_path: $path_generated"
+}
+
 preparing_before_generating
 generate_types_golang
 
-ls -la
-cd contracts
-ls -la
