@@ -1,0 +1,12 @@
+name: 'Proto compile golang'
+description: 'Compiling golang by proto files places in any dir'
+inputs:
+  dir_with_proto_name:  # directory name of proto files
+    description: 'proto file places'
+    required: true
+    default: 'proto_files'  
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.dir_with_proto_name }}
