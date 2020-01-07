@@ -9,4 +9,4 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - ${{ inputs.dir_with_proto_name }}
+    - -v $(pwd)/${{ inputs.dir_with_proto_name }}:/${{inputs.dir_with_proto_name}} -w /${{inputs.dir_with_proto_name}}
