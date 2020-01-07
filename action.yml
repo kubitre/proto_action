@@ -5,6 +5,9 @@ inputs:
     description: 'proto file places'
     required: true
     default: 'proto_files'  
+  path_generated:
+    description: 'path to your generated contracts'
+    required: false
 runs:
   using: 'docker'
   image: 'Dockerfile'

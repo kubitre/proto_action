@@ -19,15 +19,11 @@ function generate_types_golang {
 
 }
 
-function preparing_before_generating {
-    echo "start preparing dir"
-    cd ../proto_files
-}
-
 function placingYourContractsToNeedPlace {
     echo "gen_path: $path_generated"
+    mv $path_generated/* ./
 }
 
-preparing_before_generating
 generate_types_golang
+placingYourContractsToNeedPlace
 
