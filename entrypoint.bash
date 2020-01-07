@@ -22,7 +22,7 @@ function generate_types_golang {
 function placingYourContractsToNeedPlace {
     echo "gen_path: $path_generated"
     cp -r $path_generated/* ./
-    rm -rf $path_generated
+    rm -rf $global_path
 }
 
 generate_types_golang
