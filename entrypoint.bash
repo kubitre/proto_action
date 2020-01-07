@@ -26,3 +26,7 @@ function preparing_before_generating {
 
 preparing_before_generating
 generate_types_golang
+
+ls -la
+cd contracts
+ls -la
