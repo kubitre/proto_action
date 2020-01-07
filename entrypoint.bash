@@ -4,7 +4,6 @@ echo "start generating proto to golang"
 
 
 function generate_types_golang {
-    ls -la
     for x in $(find -name *.proto)
     do 
         echo "Start generate $x contract for golang models..."
