@@ -1,4 +1,4 @@
-FROM golang:1.13.0-alpine3.10 as build_plugin
+FROM golang:1.14.1-alpine3.11 as build_plugin
 
 RUN go get github.com/gogo/protobuf/proto && go get github.com/gogo/protobuf/protoc-gen-gogofast && go get github.com/gogo/protobuf/gogoproto
 
