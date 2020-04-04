@@ -1,5 +1,8 @@
 name: 'Proto compile golang'
 description: 'Compiling golang by proto files places in any dir'
+branding:
+  color: blue
+  icon: anchor
 inputs:
   dir_with_proto_name:  # directory name of proto files
     description: 'proto file places'
